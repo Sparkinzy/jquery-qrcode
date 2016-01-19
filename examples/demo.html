@@ -14,9 +14,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script type="text/javascript" src="../jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="../src/ext/utf16to8.js"></script>
 <script>
 jQuery(function(){
 	jQuery('#output').qrcode("http://jetienne.com");
+	$('#qrcode').qrcode(utf16to8("就爱PHP"));
 })
 </script>
 
